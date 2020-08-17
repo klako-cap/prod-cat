@@ -3,5 +3,6 @@
     ".phase": true,
     "**/.git": true,
     "**/.vscode": true
-  }
+  },
+  "github.gitAuthentication": false
 }
