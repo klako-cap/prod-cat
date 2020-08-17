@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".phase": true,
+    "**/.git": true,
+    "**/.vscode": true
+  }
+}
