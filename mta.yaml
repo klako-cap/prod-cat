@@ -53,7 +53,7 @@ resources:
 - name: prod-cat-db-hdi-container
   type: com.sap.xs.hdi-container
   parameters:
-    service: hanatrial  # only on trial landscapes
+    service: hana  
   #### SAP Authorization & Trust Management Service Instance
 - name: prod-cat-xsuaa
   type: org.cloudfoundry.managed-service

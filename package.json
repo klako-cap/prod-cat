@@ -16,12 +16,12 @@
     "start": "npx cds run"
   },
   "devDependencies": {
-    "sqlite3": "^4"
+    "sqlite3": "^5"
   },
   "cds": {
     "auth": {
       "passport": {
-        "strategy": "JWT",
+        "strategy": "dummy",
         "users": {
           "Donald": {
             "password": "duck",
@@ -43,7 +43,7 @@
         "kind": "xsuaa"
       },
       "db": {
-        "kind": "hana"
+        "kind": "sql"
       }
     },
     "hana": {
