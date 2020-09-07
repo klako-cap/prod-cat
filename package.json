@@ -21,20 +21,21 @@
   "cds": {
     "auth": {
       "passport": {
-        "strategy": "dummy",
-        "users": {
-          "Donald": {
-            "password": "duck",
-            "roles": [
-              "admin"
-            ]
-          },
-          "Dagobert": {
-            "password": "trick",
-            "roles": [
-              "authenticated-user"
-            ]
+        "[development]": {
+          "strategy": "dummy",
+          "users": {
+            "Donald": {
+              "password": "duck",
+              "roles": ["admin"]
+            },
+            "Dagobert": {
+              "password": "trick",
+              "roles": ["authenticated-user"]
+            }
           }
+        },
+        "[production]": {
+          "strategy": "JWT"
         }
       }
     },
