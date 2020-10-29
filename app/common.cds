@@ -1,6 +1,6 @@
 using my.domain from '../db/schema';
 
-// annotate domain.Products with @fiori.draft.enabled;
+annotate domain.Products with @fiori.draft.enabled;
 
 annotate domain.Products with {
     ID @( Common.Label: 'ID' );

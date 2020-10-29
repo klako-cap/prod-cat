@@ -1,6 +1,6 @@
 using AdminService from '../../srv/admin-service';
 
-// annotate AdminService.Products with @odata.draft.enabled;
+annotate AdminService.Products with @odata.draft.enabled;
 
 // Products List Report Page
 annotate AdminService.Products with @(
