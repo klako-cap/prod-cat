@@ -1,7 +1,7 @@
-ID;locale;name
-101;de;Flachbildschirm TV 32 Zoll
-101;fr;Écran plat TV de 32 pouces
-102;de;MyVoice Fitnesskopfhörer Blau
-102;fr;MyVoice Écouteurs de fitness Bleu
-121;de;Schreibheft liniert
-121;fr;Cahier ligné
+locale;name
+de;Flachbildschirm TV 32 Zoll
+fr;Écran plat TV de 32 pouces
+de;MyVoice Fitnesskopfhörer Blau
+fr;MyVoice Écouteurs de fitness Bleu
+de;Schreibheft liniert
+fr;Cahier ligné

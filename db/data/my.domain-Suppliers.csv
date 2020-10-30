@@ -1,5 +1,5 @@
-ID;name;priority;street;postcode;town;country_code
-301;MediaTV Inc.;1;Sesamstrasse 5;20095;Hamburg;DE
-302;Clever Company;2;Champs Éliysées;75001;Paris;FR
-303;Electronics All Over;1;Route 66;60601;Chicago;US
-304;Stationery For You;3;Abbey Road;E14 5HS;London;GB
+ID;number;name;priority;street;postcode;town;country_code
+4cbc335b-9153-43e5-bd0d-83cfba19c5f3;301;MediaTV Inc.;1;Sesamstrasse 5;20095;Hamburg;DE
+7daa42ee-7721-4898-a79f-a685bb37a146;302;Clever Company;2;Champs Éliysées;75001;Paris;FR
+8b678242-3976-4d1a-af5e-614f034710e9;303;Electronics All Over;1;Route 66;60601;Chicago;US
+b20a27bc-baf0-4291-9ab3-aaae25999a6a;304;Stationery For You;3;Abbey Road;E14 5HS;London;GB

@@ -1,5 +1,5 @@
-ID;name;stock;price;retail;currency_code;supplier_ID
-101;Flat Screen TV 32 inch;2;179.51;219.95;USD;301
-102;MyVoice Fitness Headphone blue;207;5.75;11.99;EUR;303
-103;Marvelous Smartphone;39;311.34;499.95;EUR;303
-121;Copybook (ruled paper);17;1.55;3.99;EUR;304
+number;name;stock;price;retail;currency_code;supplier_ID
+E101;Flat Screen TV 32 inch;2;179.51;219.95;USD;4cbc335b-9153-43e5-bd0d-83cfba19c5f3
+E102;MyVoice Fitness Headphone blue;207;5.75;11.99;EUR;8b678242-3976-4d1a-af5e-614f034710e9
+E103;Marvelous Smartphone;39;311.34;499.95;EUR;8b678242-3976-4d1a-af5e-614f034710e9
+A121;Copybook (ruled paper);17;1.55;3.99;EUR;b20a27bc-baf0-4291-9ab3-aaae25999a6a

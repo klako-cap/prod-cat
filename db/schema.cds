@@ -3,10 +3,10 @@ using {my.common.Address} from './common';
 
 namespace my.domain; 
 
-@assert.unique: {number: [number]}
+@assert.unique: {index2: [number]}
 entity Products : managed {
-  key ID             : UUID;
-      number         : String @assert.format:'[A-Z]/d+' @title : '{i18n>productNo}';
+  key ID             : UUID                             @title : 'ID';
+      number         : String @assert.format:'[A-Z]\d+' @title : '{i18n>productNo}';
       name           : localized String(100) @mandatory @title : '{i18n>productName}';
       stock          : Integer                          @title : '{i18n>stock}';
       price          : Decimal(9, 2)                    @title : '{i18n>price}';
@@ -16,7 +16,7 @@ entity Products : managed {
       supplier       : Association to Suppliers;
 }
 
-@assert.unique: {number: [number]}
+@assert.unique: {index2: [number]}
 entity Suppliers : managed, Address {
   key ID       : UUID;
       number   : String      @title : '{i18n>supplierNo}';
@@ -25,7 +25,7 @@ entity Suppliers : managed, Address {
       products : Association to many Products on products.supplier = $self;
 }
 
-@assert.unique: {number: [number]}
+@assert.unique: {index2: [orderNo]}
 entity Orders : managed {
   key ID       : UUID;
       orderNo  : String @title : '{i18n>orderNumber}';
