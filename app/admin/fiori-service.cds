@@ -7,7 +7,7 @@ annotate AdminService.Products with @(
   Common.SemanticKey: [number],
   UI: {   
       Identification: [{Value:number}],
-      SelectionFields: [ number, name ],
+      SelectionFields: [ number, name, supplier_ID ],
       LineItem: [
         {Value: number}, {Value: name},
         {Value: stock},  {Value: retail},
@@ -25,7 +25,7 @@ annotate AdminService.Products with @(
 	],
 	FieldGroup#Details: {
 	  Data: [
-      {Value: number}, {Value: name}, {Value: supplier.ID, Label: '{i18n>supplierID}'}, {Value: supplier.name, Label: '{i18n>Supplier}'},
+      {Value: number}, {Value: name}, {Value: supplier_ID, Label: '{i18n>supplierID}'}, {Value: supplier.name, Label: '{i18n>Supplier}'},
 	    {Value: price},  {Value: retail}, {Value: margin}, {Value: stock}
 	  ]
 	},
@@ -37,13 +37,6 @@ annotate AdminService.Products with @(
     }
 });
 
-// Add Value Help for Suppliers
-// annotate AdminService.Suppliers with @cds.odata.Valuelist;  //does not seem to work
-annotate AdminService.Suppliers {
-//   ID @Common.ValueList : {
-//     $Type          : 'Common.ValueListType',
-//     CollectionPath : 'AdminService/Suppliers',
-//     SearchSupported: true
-//   };
-  name @( Core.Computed: true );
+annotate AdminService.Suppliers with {
+  name @Core.Computed: true;
 }
