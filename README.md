@@ -6,4 +6,18 @@ This is an extended version of the sample project developed in the book [Anwendu
 ## DISCLAIMER
 This project does not represent a productive application. This sample code can change at any time without prior notice. See [License](./LICENSE).
 
+## What's more ...
+This project shows some features which are not in the sample of my book:
++ Fiori draft handling. To support this, key fields of entities must be of type ``UUID``. 
 
+## How to run locally ...
+
+### SAP-server only
++ open a terminal and start ``cds watch``
++ services are now served at http://localhost:4004
+
+### With UI
++ open a second terminal and change directory to the app-folder with ``cd app``
++ start the application router with ``npm start``
++ approuter will serve the UI at http://localhost:5000
++ if the destination ``backend`` in [app/default-env.json](/app/default-env.json) is configured to point to http://localhost:4004, then the local CAP server can be contacted by the Fiori UI.

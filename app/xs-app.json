@@ -1,5 +1,5 @@
 {
-    "welcomeFile": "index.html",
+    "welcomeFile": "fiori.html",
     "authenticationMethod": "none",
     "routes": [
         {
