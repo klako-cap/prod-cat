@@ -19,8 +19,18 @@ This project shows some features which are not in the sample of my book:
 + services are now served at http://localhost:4004
 
 ### With UI
++ create the file ``app/default-env.json`` and fill it with the following content:
+  ```json
+  {
+   "destinations": [
+    {
+      "name": "backend",
+      "url": "http://localhost:4004",
+      "forwardAuthToken": true
+    }
+   ]
+  }
+  ```
 + open a second terminal and change directory to the app-folder with ``cd app``
 + start the application router with ``npm start``
 + approuter will serve the UI at http://localhost:5000
-+ if the destination ``backend`` in [app/default-env.json](/app/default-env.json) is configured to point to http://localhost:4004, then the local CAP server can be contacted by the Fiori UI
-+ app/default-env.json is checked-in into Git to demonstrate how this is to be chosen
