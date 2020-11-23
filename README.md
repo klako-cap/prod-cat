@@ -15,7 +15,7 @@ This project shows some features which are not in the sample of my book:
 ## How to run locally ...
 
 ### SAP-server only
-+ open a terminal and start ``cds watch``
++ open a terminal and run ``npm  intall`` once and then ``cds watch``
 + services are now served at http://localhost:4004
 
 ### With UI
@@ -32,5 +32,6 @@ This project shows some features which are not in the sample of my book:
   }
   ```
 + open a second terminal and change directory to the app-folder with ``cd app``
++ run ``npm install`` once
 + start the application router with ``npm start``
 + approuter will serve the UI at http://localhost:5000
