@@ -1,6 +1,6 @@
 # Product Catalog
 
-This is an extended version of the sample project developed in the book [Anwendungsentwicklung auf der SAP Cloud Platform](https://www.rheinwerk-verlag.de/anwendungsentwicklung-auf-der-sap-cloud-platform-das-sap-cloud-application-programming-model/) (in German).
+This is an extended version of the sample project developed in the book [Anwendungsentwicklung auf der SAP Cloud Platform](https://www.rheinwerk-verlag.de/anwendungsentwicklung-auf-der-sap-cloud-platform-das-sap-cloud-application-programming-model/) (in German). In case of issues with the samples in the book, visit https://klako.info/books/cap_sap_press_de/.
 
 
 ## DISCLAIMER
@@ -9,13 +9,13 @@ This project does not represent a productive application. This sample code can c
 ## What's more ...
 This project shows some features which are not in the sample of my book:
 + Fiori draft handling. To support this, key fields of entities must be of type ``UUID``. **Note**: Fiori draft for OData v4 might still not be released for productive use. Check back with your SAP contact of trust ...
-+ CAP configuration in [package.json](/package.json) makes use of the configuration profiles ``development`` and ``production``. Choose between these two by setting the environment variable NODE_ENV to the desired profile name.
++ CAP configuration in [package.json](/package.json) makes use of the configuration profiles ``development`` and ``production``. Choose between these two by setting the environment variable NODE_ENV to the desired profile name. You can also use ``cds watch --production`` to run in production mode temporarily and once without setting NODE_ENV to ``production``.
 + CAP database configuration now uses ``"kind": "sql"``. This is resolved according to the active configuration profile. For ``development`` it resolves to ``sqlite``, for ``production`` it resolves to ``hana``.
 
 ## How to run locally ...
 
 ### SAP-server only
-+ open a terminal and run ``npm  intall`` once and then ``cds watch``
++ open a terminal and run ``npm  install`` once and then ``cds watch``
 + services are now served at http://localhost:4004
 
 ### With UI
@@ -35,3 +35,6 @@ This project shows some features which are not in the sample of my book:
 + run ``npm install`` once
 + start the application router with ``npm start``
 + approuter will serve the UI at http://localhost:5000
+
+## To do / planned
++ check version 8 of application router
